@@ -5,11 +5,8 @@
     <script>
         function myFunction() {
             document.getElementById("demo").innerHTML = "Launching app...";
-            console.log("Pre launching app");
-            window.location = "swish://";
-            console.log("Post launching app");
-
             setTimeout(function(){
+                console.log('before window,location')
                 window.location = "swish://";
                 setTimeout(function () {
                     window.location = "https://play.google.com/store/apps/details"
