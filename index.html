@@ -4,14 +4,16 @@
 <head>
     <script>
         function myFunction() {
-            document.getElementById("demo").innerHTML = "Launching app...";
-            setTimeout(function(){
-                console.log('before window,location')
-                window.location = "swish://";
-                setTimeout(function () {
-                    window.location = "https://play.google.com/store/apps/details"
-                }, 5000);
-            }, 1);
+            setTimeout(
+                function () { 
+                    console.log('pre callback');
+                    window.location = "https://play.google.com/store/apps/details"; 
+                    console.log('after callback');
+                }, 
+            50);
+
+            console.log('pre app start');
+            window.location = "swish://....";
         }
     </script>
 </head>
