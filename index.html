@@ -6,14 +6,11 @@
         function myFunction() {
             document.getElementById("demo").innerHTML = "Launching app...";
             console.log("Pre launching app");
-            window.location.replace("instagram://");
+            window.location.replace("swish://");
             console.log("Post launching app");
 
             setTimeout(() => {
                 document.getElementById("demo").innerHTML = "Launching web...";
-                console.log("Pre launching web");
-                window.location.replace("https://apps.apple.com/us/app/instagram/id389801252");
-                console.log("Post launching web");
             }, 5000);
         }
     </script>
