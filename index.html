@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "Launching app...";
+            console.log("Pre launching app");
+            window.location.replace("instagram://");
+            console.log("Post launching app");
+
+            setTimeout(() => {
+                document.getElementById("demo").innerHTML = "Launching web...";
+                console.log("Pre launching web");
+                window.location.replace("https://apps.apple.com/us/app/instagram/id389801252");
+                console.log("Post launching web");
+            }, 5000);
+        }
+    </script>
+</head>
+
+<body>
+
+    <h2>Demo JavaScript for launch mobile app</h2>
+
+    <p id="demo">Let's go.</p>
+
+    <button type="button" onclick="myFunction()">Try it</button>
+
+</body>
+
+</html>
