@@ -6,10 +6,11 @@
         function myFunction() {
             document.getElementById("demo").innerHTML = "Launching app...";
             console.log("Pre launching app");
-            window.location.replace("swish://");
+            window.location = "swish://";
             console.log("Post launching app");
 
             setTimeout(() => {
+                console.log("Before launching web");
                 document.getElementById("demo").innerHTML = "Launching web...";
             }, 5000);
         }
