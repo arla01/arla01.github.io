@@ -9,10 +9,12 @@
             window.location = "swish://";
             console.log("Post launching app");
 
-            setTimeout(() => {
-                console.log("Before launching web");
-                document.getElementById("demo").innerHTML = "Launching web...";
-            }, 5000);
+            setTimeout(function(){
+                window.location = "swish://";
+                setTimeout(function () {
+                    window.location = "https://play.google.com/store/apps/details"
+                }, 500);
+            }, 1);
         }
     </script>
 </head>
