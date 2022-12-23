@@ -6,7 +6,7 @@
         function myFunction() {
             var now = new Date().valueOf();
             setTimeout(function () {
-                if (new Date().valueOf() - now > 20000) return;
+                if (new Date().valueOf() - now > 0) return;
                 console.log('pre callback');
                 window.location = "https://itunes.apple.com/appdir";
                 console.log('after callback');
