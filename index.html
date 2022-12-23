@@ -6,11 +6,11 @@
         function myFunction() {
             var now = new Date().valueOf();
             setTimeout(function () {
-                if (new Date().valueOf() - now > 100) return;
+                if (new Date().valueOf() - now > 20000) return;
                 console.log('pre callback');
                 window.location = "https://itunes.apple.com/appdir";
                 console.log('after callback');
-            }, 25);
+            }, 5000);
 
             console.log('pre app start');
             window.location = "swish://....";
